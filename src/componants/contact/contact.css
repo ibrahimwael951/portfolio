@@ -1,0 +1,117 @@
+#contactpage{
+    min-height: calc(100vh - 4rem);
+width: 100vw;
+max-width: 60rem;
+margin: 0 auto;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.contactpagetitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+.clientdesc{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.clientimgs{
+    margin: 1rem 0rem;
+    display: flex;
+flex-wrap: wrap;
+
+}
+.clintimg{
+ 
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding:0.25rem ;
+}
+#client{
+padding: 2rem;
+}
+ 
+.contactdesc{
+    display: block;
+    padding: 0 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.contactform{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 60rem;
+}
+.name,.email,.msg{
+    transition: 0.3s ease-in-out;
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius:  0.5rem;
+    background:rgb(40, 40, 40) ;
+}
+
+.submitbtn{
+    background-color: white;
+    padding: 0.7rem 3.5rem;
+    border: none;
+    border-radius: 20px;
+    margin: 2rem;
+    font-size: larger;
+    cursor: pointer;
+    transition: 0.1s ease ;
+}
+.submitbtn:active{
+    scale: 0.9;
+}
+/* sendstatue */
+ .SUCCESS{
+    color: green;
+ }
+ .ERROR{
+    color: red;
+ }
+.sendstatue{
+    display: inline;
+ 
+ font-size: 30px;
+    
+    position: relative;
+    top: -4rem;
+    left: 10rem;
+ transition: 0.2s ease-in; 
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.7rem;
+}
+
+@media screen and (max-width: 900px) {
+    .name,.email,.msg{
+width: 70vw;
+
+    }
+} 
