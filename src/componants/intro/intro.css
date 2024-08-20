@@ -112,10 +112,10 @@ letter-spacing: 1px;
 @media screen and (max-width :840px) {
     
     .bg{
-        right: 2.7rem;
+        right: 1rem;
     }
     .bgspan{
-        right: 1.3rem;
+        right: 0.6rem;
     }
     .introcontent{
         font-size: 10vw;
