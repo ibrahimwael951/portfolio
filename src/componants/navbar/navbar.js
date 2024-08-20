@@ -39,7 +39,7 @@ const [showmenu ,setshowmenu] = useState(0)
 <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listitem'  onClick={()=> setshowmenu(0)} >menu</Link>
 <Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-60} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>about</Link>
 <Link  activeClass='active' to='works' spy={true} smooth={true} offset={-60} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>portfolio</Link>
-<Link  activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>contact</Link>
+<Link  activeClass='active' to='client' spy={true} smooth={true} offset={-60} duration={500}   className='listitem' onClick={()=> setshowmenu(0)}>contact</Link>
  
 </div>
 
