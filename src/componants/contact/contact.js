@@ -69,13 +69,15 @@ const [ERROR, setERROR] = useState(0)
 
             <h1 className='contactpagetitle'>my client</h1 >
             <p className='clientdesc'>
-            We have car modification centers to modify many cars and have a place to modify your car</p> 
+             u can connect with me at this website </p> 
 
         <div className='clientimgs'>
-
-       
-            <img style={{background: 'white'}} src={freelancer} alt='img' className='clintimg'/>
-            <img src={mostaqel} alt='img' className='clintimg'/>
+ 
+ <a href='https://www.freelancer.com/u/Ibrahimwael95'target='_blank'><img style={{background: 'white'}} src={freelancer} alt='img' className='clintimg'/></a>
+          
+          
+          
+            <a href='https://mostaql.com/u/Ibr0lol' target='_blank'> <img src={mostaqel} alt='img' className='clintimg'/></a>
         
         </div>
 
@@ -100,13 +102,14 @@ const [ERROR, setERROR] = useState(0)
 
 
 {/* links */}
-<div className='links'  >  
+{/* <div className='links'  >  
             <img src={linkedin} alt='img' className='link'/>
             <img src={youtube} alt='img' className='link'/>
             <img src={instagram} alt='img' className='link'/>
             <img src={facebook} alt='img' className='link'/>
     
-</div>
+</div> */}
+
 </form>
 
       </div>
