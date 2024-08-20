@@ -100,7 +100,14 @@ letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease;
 
+}
+.btn:hover{
+    background: blue;
+    color:  white;
+    transform: scale(1.078);
+letter-spacing: 1px;
 }
 .btnimg{
     object-fit: cover;
@@ -112,10 +119,10 @@ letter-spacing: 1px;
 @media screen and (max-width :840px) {
     
     .bg{
-        right: 1rem;
+        right: 4rem;
     }
     .bgspan{
-        right: 0.6rem;
+        right: 2rem;
     }
     .introcontent{
         font-size: 10vw;
