@@ -77,7 +77,7 @@ const [height, setheight] = useState(0);
     <section id='works'>
       <h2 className='workstitle'>My Portfolio</h2>
       <span className='worksdesc'>
-        I am Ibrahim Wael, a high school student, 17 years old. I have skills in website design using HTML, CSS, and JavaScript
+       these are my works i hope you like it 
       </span>
 
       {setscale && (
