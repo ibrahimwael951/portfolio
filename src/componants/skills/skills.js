@@ -44,7 +44,7 @@ function skills() {
         <div className='bar'>
                <img src={phplogo} alt='' className='skillbarimg'/>
                <span className='skillstext'>
-            <h2>back-end (under training )</h2>
+            <h2>back-end ( training )</h2>
                 <p>  I'm still under training to become full stack development to make the site safer.</p>
       </span> 
       
