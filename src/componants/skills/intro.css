@@ -1,0 +1,142 @@
+
+@keyframes slideineft {
+    from{transform:  translateX(-900px);  }
+    to{ transform:   translateX(0px);  }        }
+
+
+    @keyframes scaleup {
+        from{transform:  scale(0);  }
+        to{ transform:   scale(1);  }        }
+
+
+
+
+
+.intro{
+    display: flex;
+    justify-content: center;
+
+ 
+    height:  calc(100vh - 4rem);
+    width: 97vw;
+    max-width: 75rem;
+margin: 0 auto;
+ 
+ 
+
+
+}
+
+.bgspan{
+    
+    position: absolute;
+    top: 14rem;
+    right: 4rem;
+    width: 400px;
+    height: 400px;
+    border-radius: 60%;
+    background-color: aliceblue;
+    z-index: -2;
+}
+
+.bg{
+    
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50px;
+
+height: 600px;
+object-fit: cover;
+
+    z-index: -1;
+
+}
+.introcontent{
+    margin-top: -100px;
+
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+font-size: 6rem;
+font-weight: 700;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+
+
+
+
+.bgintrocontent{
+    animation:both ease-in 1s slideineft;
+ 
+    display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hello{
+    font-weight: 100;
+    font-size: 1.75rem;
+}
+.introname{
+    
+    color: blue;
+}
+.intropar{
+    margin-top: 8px;
+    font-size: small;
+    font-weight: 200;
+letter-spacing: 1px;
+}
+.btn{
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnimg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+
+    height: 1rem;
+}
+
+@media screen and (max-width :840px) {
+    
+    .bg{
+        right: 4rem;
+    }
+    .bgspan{
+        right: 2rem;
+    }
+    .introcontent{
+        font-size: 10vw;
+      
+    }
+    .bgintrocontent{
+        background-color: rgba(0, 0, 0, 0.397);
+      border-radius: 20px;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
