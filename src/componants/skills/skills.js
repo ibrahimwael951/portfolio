@@ -21,7 +21,7 @@ function skills() {
             
                 <p>  I have the experience to design responsive websites and simple and beautiful designs in html, css, javascript </p>
    
-   <span className='timeexperienss'> <p className='textte'>2 years </p> </span>
+   
       </span> 
       
        </div>
