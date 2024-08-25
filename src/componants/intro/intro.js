@@ -20,10 +20,10 @@ function Intro() {
 <span className='hello'> hello ,</span>
 <span className='introtext'>im <span className='introname' >ibrahim</span> 
 <br/> website designer</span>
-<p className='intropar'> I am Ibrahim Wael, a high school student, 17 years old.<br/> I have skills in website design using HTML ,  CSS and JavaScript</p>
+<p className='intropar'> I am Ibrahim Wael, a high school student, 17 years old.<br/> I have skills in website design using HTML ,  CSS , JavaScript and react </p>
 </span>
 
-<Link  activeClass='active' to='client' spy={true} smooth={true} offset={-60} duration={500}  ><button className='btn'><img className='btnimg' src={btnimg}width={20} alt=''/> hire me</button></Link>
+<Link><button className='btn'><img className='btnimg' src={btnimg}width={20} alt=''/> hire me</button></Link>
  </div>
 
 {/* left side */}
