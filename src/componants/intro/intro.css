@@ -100,7 +100,12 @@ letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: 200ms all;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover{
+    scale: 1.1;
 }
 .btnimg{
     object-fit: cover;

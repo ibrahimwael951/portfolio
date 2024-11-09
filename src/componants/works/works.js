@@ -27,7 +27,7 @@ const [height, setheight] = useState(0);
       src: project1,
       title: 'Car modification company',
       description: 'A site about the car modification company and the site explains its services and modifications available and how to communicate with them The site is designed and designed by html, css and javascript',
-      time:' one weak to finish'
+      time:' one week to finish'
     },
     {
       src: project2,
