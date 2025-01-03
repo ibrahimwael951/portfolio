@@ -3,32 +3,22 @@
     from{transform:  translateX(-900px);  }
     to{ transform:   translateX(0px);  }        }
 
-
     @keyframes scaleup {
         from{transform:  scale(0);  }
         to{ transform:   scale(1);  }        }
 
-
-
-
-
 .intro{
     display: flex;
     justify-content: center;
-
- 
+    position: relative;
+    overflow: hidden;
     height:  calc(100vh - 4rem);
-    width: 97vw;
+    width: 100%;
     max-width: 75rem;
-margin: 0 auto;
- 
- 
-
-
+    margin: 0 auto; 
 }
 
 .bgspan{
-    
     position: absolute;
     top: 14rem;
     right: 4rem;
@@ -38,58 +28,50 @@ margin: 0 auto;
     background-color: aliceblue;
     z-index: -2;
 }
-
+.A_btn{
+    text-decoration: none;
+    width: fit-content;
+}
 .bg{
-    
     position: absolute;
     top: 6rem;
     right: 6rem;
     border-radius: 50px;
-
-height: 600px;
-object-fit: cover;
-
+    height: 600px;
+    object-fit: cover;
     z-index: -1;
-
 }
 .introcontent{
     margin-top: -100px;
-
     height: 100vh;
     width: 100%;
     padding: 2rem;
-font-size: 6rem;
-font-weight: 700;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    font-size: 6rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
-
-
 
 
 .bgintrocontent{
     animation:both ease-in 1s slideineft;
- 
     display: flex;
-flex-direction: column;
-justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .hello{
     font-weight: 100;
     font-size: 1.75rem;
 }
 .introname{
-    
     color: blue;
 }
 .intropar{
     margin-top: 8px;
     font-size: small;
     font-weight: 200;
-letter-spacing: 1px;
+    letter-spacing: 1px;    
 }
 
 .A_btn{
@@ -108,6 +90,7 @@ letter-spacing: 1px;
     transition: 200ms all;
     text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn:hover{
     scale: 1.1;
@@ -115,7 +98,6 @@ letter-spacing: 1px;
 .btnimg{
     object-fit: cover;
     margin: 0 0.25rem;
-
     height: 1rem;
 }
 

@@ -1,12 +1,12 @@
 
 
 import React from 'react'
-import './intro.css'
+import './main.css'
 import ibrahim from '../../assets/ibrahim.png'
-import {Link} from 'react-scroll'
-import btnimg from '../../assets/linkedin.png'
+ import CV from '../../assets/CV.pdf'
 
-function Intro() {
+
+function Main() {
 
 
   return (
@@ -22,8 +22,8 @@ function Intro() {
 <br/> website designer</span>
 <p className='intropar'> I am Ibrahim Wael, a high school student, 17 years old.<br/> I have skills in website design using HTML ,  CSS , JavaScript and react </p>
 </span>
-
-<a className='A_btn' href='https://www.linkedin.com/in/ibrahim-wael-204091310/'><button className='btn'><img className='btnimg' src={btnimg}width={20} alt=''/> hire me</button></a>
+ 
+<a href={CV} className='A_btn' download="My_CV.pdf"   ><button className='btn'> Download My CV</button></a>
  </div>
 
 {/* left side */}
@@ -34,4 +34,4 @@ function Intro() {
   )
 }
 
-export default Intro
+export default Main

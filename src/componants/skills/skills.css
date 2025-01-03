@@ -1,5 +1,4 @@
 #skills{
- 
 overflow: hidden;
 max-width: 65rem;
 width: 97vw;
@@ -86,9 +85,7 @@ font-size: 4vw;
 @media screen and (min-width : 1000px){
   
     .bar:hover{
-  
-        scale: 1.01;
-        margin: 2rem 0;
+       scale: 1.02;
     }
   
     

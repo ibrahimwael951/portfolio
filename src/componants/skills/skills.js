@@ -2,7 +2,7 @@ import React from 'react'
 import './skills.css'
 import htmllogo from '../../assets/html.png'
 import reactlogo from '../../assets/react.png'
-import phplogo from '../../assets/php.png'
+import tailwind from '../../assets/php.png'
 function skills() {
   return (
 
@@ -14,27 +14,26 @@ function skills() {
 
             
         <div className='bar'>
+
                <img src={htmllogo} alt='' className='skillbarimg'/>
             
             <span className='skillstext'>
-            <h2>web design</h2>
-            
-                <p>  I have the experience to design responsive websites and simple and beautiful designs in html, css, javascript </p>
-   
-   
-      </span> 
+                 <h2>web design</h2>
+                  <p>  I have the experience to design responsive websites and simple and beautiful designs in html, css, javascript </p>
+            </span> 
       
        </div>
 
-                  
+
 
 
         <div className='bar'>
                <img src={reactlogo} alt='' className='skillbarimg'/>
-               <span className='skillstext'>
-            <h2>website app </h2>
-                <p>   I have experience designing a website application by React and node.js </p>
-      </span> 
+
+             <span className='skillstext'>
+                  <h2>website app </h2>
+                    <p>   I have experience designing a website application by React and node.js </p>
+            </span> 
        </div>
 
 
@@ -42,11 +41,11 @@ function skills() {
 
               
         <div className='bar'>
-               <img src={phplogo} alt='' className='skillbarimg'/>
-               <span className='skillstext'>
-            <h2>back-end ( training )</h2>
-                <p>  I'm still under training to become full stack development to make the site safer.</p>
-      </span> 
+                <img src="https://cdn-icons-png.flaticon.com/128/10435/10435040.png" alt='' className='skillbarimg'/>
+              <span className='skillstext'>
+                    <h2>Tailwind CSS</h2>
+                        <p> i have experience on tailwind css and i can make a website with tailwind css </p>
+              </span> 
       
         </div>
 

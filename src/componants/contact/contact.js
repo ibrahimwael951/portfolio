@@ -3,15 +3,12 @@ import "./contact.css"
 
 
 //emailjs
-
 import emailjs from '@emailjs/browser';
+
 //images
-import linkedin from "../../assets/linkedin.png"
 import mostaqel from "../../assets/mostacel.png"
 import freelancer from "../../assets/freelancer.png"
-import youtube from '../../assets/youtube.png'
-import instagram from '../../assets/instagram.png'
-import facebook from '../../assets/facebook.png'
+ 
  
 function Contact() {
 
@@ -65,28 +62,12 @@ const [ERROR, setERROR] = useState(0)
 
   return (
     <section id='contactpage'>
-        <div id='client'>
-
-            <h1 className='contactpagetitle'>my client</h1 >
-            <p className='clientdesc'>
-             u can connect with me at this website </p> 
-
-        <div className='clientimgs'>
- 
- <a href='https://www.freelancer.com/u/Ibrahimwael95'target='_blank'><img style={{background: 'white'}} src={freelancer} alt='img' className='clintimg'/></a>
-          
-          
-          
-            <a href='https://mostaql.com/u/Ibr0lol' target='_blank'> <img src={mostaqel} alt='img' className='clintimg'/></a>
-        
-        </div>
-
-          </div>
+   
 
 
       <div id='contact'>
 <h1 className='contactpagetitle'>contact me</h1>
-<span className='contactdesc'> ples fill to contact by email</span>
+<span className='contactdesc'>   fill to contact by email</span>
 
 {/* form */}
 <form className='contactform' ref={form} onSubmit={sendEmail} >
@@ -101,14 +82,19 @@ const [ERROR, setERROR] = useState(0)
     <h2 className='sendstatue ERROR' style={{transform: `scale(${ERROR})`}} >try again </h2>
 
 
-{/* links */}
-{/* <div className='links'  >  
-            <img src={linkedin} alt='img' className='link'/>
-            <img src={youtube} alt='img' className='link'/>
-            <img src={instagram} alt='img' className='link'/>
-            <img src={facebook} alt='img' className='link'/>
-    
-</div> */}
+    <div id='client'>
+ 
+<div className='clientimgs'>
+
+<a href='https://www.freelancer.com/u/Ibrahimwael95'target='_blank'><img style={{background: 'white'}} src={freelancer} alt='img' className='clintimg'/></a>
+
+
+
+<a href='https://mostaql.com/u/Ibr0lol' target='_blank'> <img src={mostaqel} alt='img' className='clintimg'/></a>
+
+</div>
+
+</div>
 
 </form>
 

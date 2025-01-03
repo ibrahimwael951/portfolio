@@ -12,17 +12,19 @@ const [showmenu ,setshowmenu] = useState(0)
  
   return (
 <section className='navbar'>
-    <img src={Logo} alt='sad' className='logo'/>
-
+  <Link  to='intro' spy={true} smooth={true} offset={-100} duration={500} > 
+       <img src={Logo} alt='sad' className='logo'/>
+  </Link>
+  
     <div className='desktopmenu' >
-<Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='dexktopmenulistitem' >menu</Link>
-<Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-60} duration={500}  className='dexktopmenulistitem'>about</Link>
-<Link  activeClass='active' to='works' spy={true} smooth={true} offset={-60} duration={500}  className='dexktopmenulistitem'>portfolio</Link>
+<Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='dexktopmenulistitem' >Main</Link>
+<Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-60} duration={500}  className='dexktopmenulistitem'>About</Link>
+<Link  activeClass='active' to='works' spy={true} smooth={true} offset={-60} duration={500}  className='dexktopmenulistitem'>Projects</Link>
  
   </div>
 
 <Link  className='desktopmenubtn' activeClass='active' to='client' spy={true} smooth={true} offset={-60} duration={500}   >
-  <p> conect me</p>
+  <p> Contact</p>
   <span className='deskmenubtnbg'> </span>
   </Link>
  
@@ -36,10 +38,10 @@ const [showmenu ,setshowmenu] = useState(0)
 
 <div className='navmenu'style={{scale:showmenu?'1' : '0' , width:showmenu? '15rem' : '0',   height:showmenu? 'fit-content' : '0'}}>
 
-<Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listitem'  onClick={()=> setshowmenu(0)} >menu</Link>
-<Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-60} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>about</Link>
-<Link  activeClass='active' to='works' spy={true} smooth={true} offset={-60} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>portfolio</Link>
-<Link  activeClass='active' to='client' spy={true} smooth={true} offset={-60} duration={500}   className='listitem' onClick={()=> setshowmenu(0)}>contact</Link>
+<Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listitem'  onClick={()=> setshowmenu(0)} >Main</Link>
+<Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-60} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>About</Link>
+<Link  activeClass='active' to='works' spy={true} smooth={true} offset={-60} duration={500}  className='listitem' onClick={()=> setshowmenu(0)}>Projects</Link>
+<Link  activeClass='active' to='client' spy={true} smooth={true} offset={-60} duration={500}   className='listitem' onClick={()=> setshowmenu(0)}>Contact</Link>
  
 </div>
 

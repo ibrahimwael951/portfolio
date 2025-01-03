@@ -3,7 +3,7 @@ import React from 'react'
  
 
 import Navbar from "./componants/navbar/navbar";
-import Intro from "./componants/intro/intro";
+import Intro from "./componants/main/main";
 import Skills from "./componants/skills/skills";
 import Works from "./componants/works/works";
 import Contact from "./componants/contact/contact";

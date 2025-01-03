@@ -1,8 +1,9 @@
 #works{
-  position: relative;
-  overflow: hidden;
+  
+    position: relative;
+    overflow: hidden;
     min-height: calc(100vh - 4rem);
-    width: 97vw;
+    width: 100%;
 max-width: 70rem;
 margin: 0 auto;
 display: flex;
@@ -185,7 +186,7 @@ display: inline;
     top: 10px;
     right: 16px;
     font-size: 40px;
-    background-color: #4CAF50;
+    background-color: rgba(255, 0, 0, 0.842);
     color: #fff;
     padding: 0px 10px;
     border: none;
@@ -194,7 +195,7 @@ display: inline;
   }
   
   .detailspage-right button:hover {
-    background-color: #3e8e41;
+    background-color: red;
   }
 
 
