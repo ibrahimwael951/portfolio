@@ -23,7 +23,7 @@ function Intro() {
 <p className='intropar'> I am Ibrahim Wael, a high school student, 17 years old.<br/> I have skills in website design using HTML ,  CSS , JavaScript and react </p>
 </span>
 
-<a href='https://www.linkedin.com/in/ibrahim-wael-204091310/'><button className='btn'><img className='btnimg' src={btnimg}width={20} alt=''/> hire me</button></a>
+<a className='A_btn' href='https://www.linkedin.com/in/ibrahim-wael-204091310/'><button className='btn'><img className='btnimg' src={btnimg}width={20} alt=''/> hire me</button></a>
  </div>
 
 {/* left side */}
