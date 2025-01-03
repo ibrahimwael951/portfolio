@@ -1,4 +1,6 @@
 #works{
+  position: relative;
+  overflow: hidden;
     min-height: calc(100vh - 4rem);
     width: 97vw;
 max-width: 70rem;
