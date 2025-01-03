@@ -91,6 +91,11 @@ justify-content: center;
     font-weight: 200;
 letter-spacing: 1px;
 }
+
+.A_btn{
+    text-decoration: none;
+    width: fit-content;
+}
 .btn{
     background-color: white;
     margin: 1rem 0;
