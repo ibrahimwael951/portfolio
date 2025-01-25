@@ -23,7 +23,7 @@ function Main() {
 <p className='intropar'> I am Ibrahim Wael, a high school student, 17 years old.<br/> I have skills in website design using HTML ,  CSS , JavaScript and react </p>
 </span>
  
-<a href={CV} className='A_btn' download="My_CV.pdf"   ><button className='btn'> Download My CV</button></a>
+{/* <a href={CV} className='A_btn' download="My_CV.pdf"   ><button className='btn'> Download My CV</button></a> */}
  </div>
 
 {/* left side */}

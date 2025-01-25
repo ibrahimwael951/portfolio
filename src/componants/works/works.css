@@ -13,6 +13,7 @@ justify-content: center;
 text-align: center;
 padding: 0 ;
 margin-top: 3rem;
+user-select: none;
 }
 
 .workstitle{
@@ -90,24 +91,21 @@ transition: 0.3s ease all;
     z-index: 10;
 }
 .detailshow{
-    text-align: left;
-      background-color: #000000;  
-      transition: 0.5s ease all;
-      transform: scale(0);
-      position: fixed;
- top: 8vh;
- left: 8vw;
- 
-border-radius: 20px;
-       z-index: 10;
-height: 0;
-width: 0;
-
-    /* height: 80%;
-    width: 90%; */
-    overflow-x: hidden;
-    scrollbar-width: none;
-     padding: 20px;
+  text-align: left;
+  background-color: #000000;  
+  transition: 0.5s ease all;
+  transform: scale(0);
+  position: fixed;
+  top: 8vh;
+  left: 8vw;
+  border-radius: 20px;
+  z-index: 10;
+  height: 0;
+  width: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  padding: 20px;
+  user-select: none;
 }
 .detailshow>h2{
 font-size: 44px;
@@ -116,12 +114,12 @@ display: inline;
  
 }
 .detailshow>p{ 
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(92, 92, 92, 0.63);
     font-size: 28px;
     border-radius: 20px;
     letter-spacing: 2px;
- 
+
 
 }
 
@@ -159,7 +157,7 @@ display: inline;
     flex-direction: column;
     width: 30%;
     margin: auto 0;
-    height: 20vh;
+    height: fit-content;
     padding: 20px;
   }
   
@@ -174,9 +172,23 @@ display: inline;
     background-color: aliceblue;
     border-radius: 20px;
     color: #000000;
-    padding: 10px;
-    font-size: 38px;
-    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 20px;
+    margin:20px 0px 20px 0px;
+  }
+    .detailspage-right a {
+    background-color: aliceblue;
+    border-radius: 20px;
+    color: #000000;
+    padding: 5px;
+    font-size: 20px;
+    margin:20px 0px 20px 0px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  .detailspage-right a:hover {
+    scale: 1.1;
+ 
   }
   
   .detailspage-right button {
@@ -225,14 +237,14 @@ display: inline;
       font-size: 7vw;
     }
     .detailspage-right>p {
-font-size: 5vw;
+  font-size: 20px;
     }
     .detailshow>h2{
        
-      font-size: 9vw;
+      font-size:30px;
     }
     .detailshow>p{
-      font-size: 6vw;
+      font-size: 24px;
     }
   }
  

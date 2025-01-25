@@ -1,10 +1,14 @@
+
 import React, { useState } from 'react';
 import './works.css';
-import style from './works.css';
+ 
 import project1 from "../../assets/pro 1.png";
 import project2 from "../../assets/pro 2.png";
 import project3 from "../../assets/pro 3.png";
-import soon from "../../assets/soon.jpg";
+import project4 from "../../assets/pro 4.png";
+import project5 from "../../assets/pro 5.png";
+import project6 from "../../assets/pro 6.png";
+ 
 
 function Works() {
   const [currentImage, setCurrentImage] = useState(null);
@@ -23,27 +27,51 @@ const [height, setheight] = useState(0);
   const images = [
     {
       src: project1,
-      title: 'Car modification company',
-      description: 'A site about the car modification company and the site explains its services and modifications available and how to communicate with them The site is designed and designed by html, css and javascript',
-       
+      title: 'Flix App',
+      description: 'A movie streaming app that allows users to watch movies and TV shows. The app is built using React, Redux, Firebase, and Styled using Tailwind CSS. The app is responsive and has a dark mode feature. The app is still under development.',
+      LinkPage: "https://flix.kareemadel.com/en",
+      LinkGithub: "https://github.com/KareemAdelAwwad/flix",
+      responsive: "yes",
     },
     {
       src: project2,
-      title: 'shoes shop',
-      description: 'Designing a website for shop shoes and designed to display the details of the company and to log in to the site and purchase designed in html, css and javascript and is still under development',
-           
+      title: 'School App',
+      description: 'A school management app that allows teachers to manage students, subjects, and grades. The app is built using React, Redux, Firebase, and Styled using Tailwind CSS. The app is responsive and has a dark mode feature. The app is still under development.',
+      LinkGithub: "https://github.com/ibrahimwael951/school-repo",
+      LinkPage: "https://appschool.vercel.app/",
+      responsive: "yes",
     },
     {
       src: project3,
-      title: 'storage site',
-      description: 'A site that is a table in which the products enter and you can delete and update the product and is dedicated to all screens and there is a button to change the site from dark mode to light mode . and made by using html , css and javascript',
-         
+      title: 'Car modification company',
+      description: 'A site about the car modification company and the site explains its services and modifications available and how to communicate with them. The site is designed and developed using HTML, CSS, and JavaScript.',
+      LinkPage: "https://ibrahimwael951.github.io/Car-Company/",
+      LinkGithub: "https://github.com/ibrahimwael951/Car-Company",
+      responsive: "yes",
     },
     {
-      src: soon,
-      title: 'Coming Soon',
-      description: 'This project is coming soon',
-      
+      src: project4,
+      title: 'Shoes Shop',
+      description: 'Designing a website for a shoe shop to display company details and allow users to log in and purchase. Designed using HTML, CSS, and JavaScript, and is still under development.',
+      LinkPage: "https://ibrahimwael951.github.io/shoes-shop/",
+      LinkGithub: "https://github.com/ibrahimwael951/shoes-shop/",
+      responsive: "NO",
+    },
+    {
+      src: project5,
+      title: 'Storage Site',
+      description: 'A site that allows users to enter, delete, and update products. It is responsive and includes a button to switch between dark mode and light mode, built using HTML, CSS, and JavaScript.',
+      LinkPage: "https://ibrahimwael951.github.io/calc-js/",
+      LinkGithub: "https://github.com/ibrahimwael951/calc-js",
+      responsive: "yes",
+    },
+    {
+      src: project6,
+      title: 'Content Creator Portfolio',
+      description: 'A site that displays the content creator portfolio, designed using HTML, CSS, and JavaScript, and is still under development.',
+      LinkPage: "none",
+      LinkGithub: "none",
+      responsive: "No",
     }
   ];
 
@@ -55,8 +83,10 @@ const [height, setheight] = useState(0);
     setshowbg(1)
     setDetails({
       title: image.title,
-      description: image.description ,
-      time: image.time
+      description: image.description,
+      LinkGithub: image.LinkGithub,
+      LinkPage: image.LinkPage,
+      Responsive: image.responsive,
     });
    
     
@@ -92,7 +122,27 @@ const [height, setheight] = useState(0);
                                  <div className='detailspage-right'>
                                     <h2>{details.title}</h2>
                        
-                               
+                                    {details.LinkGithub === "none" ? (
+                <p style={{backgroundColor:"red"}}>no Link Github : Private</p>
+              ) : (
+                <a href={details.LinkGithub}>Link Github : Click Me</a>
+              )}
+
+                  {details.LinkPage === "none" ? (
+                <p style={{backgroundColor:"red"}}>no Link Github</p>
+              ) : (
+                <a href={details.LinkPage}>Link Page : Click Me</a>
+              )} 
+
+                                    {/* <p>responsive : {details.Responsive} </p> */}
+
+                                    {details.Responsive === "yes" ? (
+                                     
+                                      <p style={{backgroundColor:"green"}}>Responsive : Yes</p>):
+                                      (
+                                      <p style={{backgroundColor:"red"}}>Not Responsive</p>
+                                    )
+                                      }
                                    <button onClick={handleCloseDetails }>x</button>
                                    
                             </div>

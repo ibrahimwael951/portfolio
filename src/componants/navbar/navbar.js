@@ -12,7 +12,7 @@ const [showmenu ,setshowmenu] = useState(0)
  
   return (
 <section className='navbar'>
-  <Link  to='intro' spy={true} smooth={true} offset={-100} duration={500} > 
+  <Link  activeClass="none"  to='intro' spy={true} smooth={true} offset={-100} duration={500} > 
        <img src={Logo} alt='sad' className='logo'/>
   </Link>
   

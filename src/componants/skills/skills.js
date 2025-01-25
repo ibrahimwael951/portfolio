@@ -32,7 +32,7 @@ function skills() {
 
              <span className='skillstext'>
                   <h2>website app </h2>
-                    <p>   I have experience designing a website application by React and node.js </p>
+                    <p>   I have experience designing a website application by React.js and Next.js </p>
             </span> 
        </div>
 
